@@ -1,0 +1,15 @@
+.modal-backdrop {
+    display: none !important;
+}
+
+
+#mobyticSearchModal {
+    #search_widget {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .container {
+        min-height: unset !important;
+    }
+}

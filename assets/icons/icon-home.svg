@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.717" height="22.627" viewBox="0 0 23.717 22.627">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #005321;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon-home" transform="translate(-382.42 -202.074)">
+    <path id="Tracé_39" data-name="Tracé 39" class="cls-1" d="M382.951,214.7l11.567-11.567,11.09,11.09"/>
+    <path id="Tracé_40" data-name="Tracé 40" class="cls-1" d="M403.707,282.319v10.43H410.4v-5.215h3.892v5.215h6.694v-10.43" transform="translate(-18.033 -68.798)"/>
+  </g>
+</svg>

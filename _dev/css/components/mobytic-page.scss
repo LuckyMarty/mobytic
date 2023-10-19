@@ -1,0 +1,9 @@
+#mobytic {
+    &-distributeurs {
+        
+        @media (min-width: 992px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

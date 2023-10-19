@@ -1,0 +1,29 @@
+@mixin mobytic-card {
+    border: none;
+    border-radius: $mobytic-btn-radius;
+    padding: 40px 80px;
+
+    @media (max-width: $mobytic-responsive-mobile) {
+        padding: 25px;
+    }
+}
+
+
+// Buttons
+@mixin mobytic-btn-normal {
+    color: $white;
+    background-color: $mobytic-color-2;
+}
+@mixin mobytic-btn-normal-hover {
+    color: $white;
+    background-color: $mobytic-color-4;
+}
+
+@mixin mobytic-btn-addToCart {
+    color: $white;
+    background-color: $mobytic-color-4;
+}
+@mixin mobytic-btn-addToCart-hover {
+    color: $white;
+    background-color: $mobytic-color-2;
+}

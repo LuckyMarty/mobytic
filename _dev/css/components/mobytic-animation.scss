@@ -1,0 +1,55 @@
+@keyframes mobyticRotate {
+    to {
+        transform: rotate(360deg);
+    }                
+}
+
+
+
+@keyframes mobyticRotate_1 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }                
+}
+
+
+
+@keyframes moveRotateCircle {
+    0% {
+        transform: translate(0, 1);
+    }
+
+    25% {
+        transform: translate(-5px, 5px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    75% {
+        transform: translate(5px, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+@keyframes mobyticIconCartButton {
+    from {
+        transform-origin: left bottom;
+        transform: rotate(0);
+    }
+
+    to {
+        transform-origin: left bottom;
+        transform: rotate(-25deg);
+    }
+}

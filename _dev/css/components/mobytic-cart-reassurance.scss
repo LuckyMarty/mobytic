@@ -1,0 +1,39 @@
+#cart {
+    #mobytic-cart-reassurance {
+
+        margin-top: 50px;
+        margin-bottom: 120px;
+
+        .row {
+
+            background-color: #F5F5F5;
+
+            .container {
+                @media (max-width: 768px) {
+                    margin: 20px 0;
+                }
+
+                .elements {
+
+                    >div {
+                        text-align: center;
+                        padding: 50px 0;
+
+                        font-size: 0.9375rem;
+                        font-weight: bold;
+
+                        @media (max-width: 768px) {
+                            padding: 20px 0;
+                        }
+
+                        >div {
+                            &:first-child {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
