@@ -1,0 +1,8 @@
+{l s='' d='Reassurance'}
+{l s="" d='Homepage.About'}
+{l s="" d='Homepage.Intro'}
+{l s="" d='Homepage.Cards'}
+
+
+
+{l s="" d='Cta'}

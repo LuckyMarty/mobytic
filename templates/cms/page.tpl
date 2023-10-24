@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {extends file='page.tpl'}
-{if $cms.id == 4}
+{if $cms.id == $MB_THEME_SETTINGS_CMS_ABOUT_ID}
 {else}
   {block name='page_title'}
     {$cms.meta_title}
@@ -31,7 +31,7 @@
 {/if}
 
 {block name='page_content_container'}
-  {if $cms.id == 4}
+  {if $cms.id == $MB_THEME_SETTINGS_CMS_ABOUT_ID}
     <div id="mobytic-homepage-about" class="container">
 
       <div class="row">
@@ -54,7 +54,8 @@
 
         <div class="col-md-8 col-sm-12 content">
           <div>
-            <p>L’entreprise Plein D’Vie est une entreprise artisanale basée à Kembs dans le Haut Rhin au sud de l’Alsace à la frontière avec l’Allemagne et la Suisse.
+          <p>{$MB_THEME_SETTINGS_CMS_ABOUT nofilter}</p>
+            {* <p>L’entreprise Plein D’Vie est une entreprise artisanale basée à Kembs dans le Haut Rhin au sud de l’Alsace à la frontière avec l’Allemagne et la Suisse.
             <br>
             Elle est née d’une passion ; celle de Sébastien pour l’alimentation vivante, le bien-être, la santé, le partage et le mieux vivre.
             <br>
@@ -66,7 +67,7 @@
             <br>
             Des valeurs qui tiennent en peu de mots : biologique, végétal, cru, respect du vivant, sain, développement solidaire et collaboratif.
             <br>
-            Il y a de tout cela dans les graines de Plein d’Vie et bien plus encore…</p>
+            Il y a de tout cela dans les graines de Plein d’Vie et bien plus encore…</p> *}
 
             <img class="bg" src="../..{$urls.theme_assets}img/homepage/about/round.svg">
             <img src="../..{$urls.theme_assets}img/homepage/about/certificat-ab.svg">

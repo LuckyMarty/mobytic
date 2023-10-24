@@ -35,9 +35,9 @@
 
           {* Left *}
           <div class="row">
-            <h1>Bienvenue sur Plein d'Vie</h1>
-            <p>Retrouvez toutes nos gammes de produits dans la boutique en ligne</p>
-            <a class="btn" href="{if Group::getCurrent()->id == 4}/5-professionnels{else}/8-boutique{/if}">La boutique en ligne</a>
+            <h1>{l s="Bienvenue sur Plein d'Vie" d='Homepage.Intro'}</h1>
+            <p>{l s="Retrouvez toutes nos gammes de produits dans la boutique en ligne" d='Homepage.Intro'}</p>
+            <a class="btn" href="{if Group::getCurrent()->id == 4}/5-professionnels{else}/8-boutique{/if}">{l s="La boutique en ligne" d='Homepage.Intro'}</a>
           </div>
         </div>
 
@@ -45,10 +45,8 @@
         <div class="col-md-3 col-sm-12 pro">
           <div class="row">
             <img src="../..{$urls.theme_assets}img/homepage/banner/plein-dvie-graine.svg" alt="icone Graine">
-            <div><b>Vous êtes un professionnel ?</b></div>
-            <p class="text-center">Inscrivez-vous en tant que
-              professionnel pour bénéficier
-              de toutes les offres dédiées !</p>
+            <div><b>{l s="Vous êtes un professionnel ?" d='Homepage.Intro'}</b></div>
+            <p class="text-center">{l s="Inscrivez-vous en tant que professionnel pour bénéficier de toutes les offres dédiées !" d='Homepage.Intro'}</p>
             <a class="btn" href="/connexion#login-form-professionnal?back={$urls.pages.my_account}">Espace Pro</a>
           </div>
         </div>
@@ -74,7 +72,7 @@
               /3-green-gnola
             {/if}
             ">
-              <span>Les Green'gnola</span>
+              <span>{l s="Les Green'gnola" d='Homepage.Cards'}</span>
           </a>
           <img src="../..{$urls.theme_assets}img/homepage/cards/cuillere-gauche.svg" alt="icone Graine">
         </div>
@@ -91,7 +89,7 @@
               /4-g-raw-tugiato
             {/if}
             ">
-              <span>Les G'raw Tugiato</span>
+              <span>{l s="Les G'raw Tugiato" d='Homepage.Cards'}</span>
             </a>
             <img src="../..{$urls.theme_assets}img/homepage/cards/cuillere-droite.svg" alt="icone Graine">
           </div>
@@ -125,27 +123,24 @@
           <div class="col-md-4 col-sm-12">
             <div><img src="../..{$urls.theme_assets}img/homepage/reassurance/fabrique-en-france.svg"></div>
             <div>
-              <span>Fabriqué en France</span>
-              <p>Tous nos produits sont élaborés
-                dans nos ateliers en Alsace</p>
+              <span>{l s='Fabriqué en France' d='Reassurance'}</span>
+              <p>{l s='Tous nos produits sont élaborés dans nos ateliers en Alsace' d='Reassurance'}</p>
             </div>
           </div>
 
           <div class="col-md-4 col-sm-12">
             <div><img src="../..{$urls.theme_assets}img/homepage/reassurance/fabrication-artisanale.svg"></div>
             <div>
-              <span>Fabrication artisanale</span>
-              <p>Tous nos produits sont fabriqués
-                à la main</p>
+              <span>{l s='Fabrication artisanale' d='Reassurance'}</span>
+              <p>{l s='Tous nos produits sont fabriqués à la main' d='Reassurance'}</p>
             </div>
           </div>
 
           <div class="col-md-4 col-sm-12">
             <div><img src="../..{$urls.theme_assets}img/homepage/reassurance/logo-part.svg"></div>
             <div>
-              <span>Produits 100% bio</span>
-              <p>Tous nos produits sont 100% bio
-                dans le respect du vivant</p>
+              <span>{l s='Produits 100% bio' d='Reassurance'}</span>
+              <p>{l s='Tous nos produits sont 100% bio dans le respect du vivant' d='Reassurance'}</p>
             </div>
           </div>
 
@@ -163,7 +158,7 @@
       <div class="title mobytic-title">
         <img src="../..{$urls.theme_assets}img/global/logo-part.svg">
         <h2 class="h2 text-uppercase">
-          {l s='Qui est Plein d\'Vie ?' d='Shop.Theme.Catalog'}
+          {l s='Qui est Plein d\'Vie ?' d='Homepage.About'}
         </h2>
         <hr>
       </div>
@@ -179,18 +174,13 @@
 
       <div class="col-md-8 col-sm-12 content">
         <div>
-          <p>Plein D’Vie est une entreprise artisanale basée à Kembs dans le Haut Rhin au sud de l’Alsace à la frontière avec l’Allemagne et la Suisse.<br>
-          Elle est née d’une passion ; celle de Sébastien pour l’alimentation vivante, le bien-être, la santé, le partage et le mieux vivre.<br>
-          Au cours de son cheminement, il a fait connaissance avec les graines germées, source incroyable de protéines végétales de macro et micro nutriments.<br>
-          Et c’est tout naturellement qu’il a voulu utiliser ses connaissances acquises pour créer les Green’Gnola.<br>
-          Des valeurs qui tiennent en peu de mots : biologique, végétal, cru, respect du vivant, sain, développement solidaire et collaboratif.<br>
-          Il y a de tout cela dans les graines de Plein d’Vie et bien plus encore…</p>
+          <p>{$MB_THEME_SETTINGS_HOMEPAGE_ABOUT nofilter}</p>
 
           <img class="bg" src="../..{$urls.theme_assets}img/homepage/about/round.svg">
           <img src="../..{$urls.theme_assets}img/homepage/about/certificat-ab.svg">
 
           <a class="h4 btn" href="/content/4-a-propos">
-            {l s='En savoir plus' d='Shop.Theme.Catalog'}
+            {l s='En savoir plus' d='Cta'}
           </a>
         </div>
       </div>
